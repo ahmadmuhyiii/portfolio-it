@@ -13,6 +13,11 @@
         document.documentElement.classList.remove('dark');
       }
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
   </head>
   <body>
     <!-- Header Start -->
@@ -197,6 +202,9 @@
     </section>
     <!-- About Section End -->
 
+    
+ 
+
     <!-- Portfolio Section Start -->
     <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
       <div class="container">
@@ -211,9 +219,148 @@
         </div>
 
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/vercleee.jpg" alt="Next Js" width="w-full" />
+              <!-- Caraousel Components -->
+                <div class="relative w-full max-w-3xl overflow-hidden rounded-lg shadow-lg">
+                  <!-- Carousel Container -->
+                  <div id="carousel3" class="carousel w-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item3 relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech1.jpg" class="block w-full" alt="Slide 1">
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item3 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech2.jpg" class="block w-full" alt="Slide 2">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item3 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech3.jpg" class="block w-full" alt="Slide 3">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item3 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech4.jpg" class="block w-full" alt="Slide 4">
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item3 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech5.jpg" class="block w-full" alt="Slide 5">
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="carousel-item3 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/nutech6.jpg" class="block w-full" alt="Slide 6">
+                    </div>
+                  </div>
+              
+                  <!-- Navigation Buttons -->
+                  <button id="prevButton3" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❮
+                  </button>
+                  <button id="nextButton3" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❯
+                  </button>
+                </div>
+                <!-- Script to Handle Carousel Functionality -->
+                <script>
+                  const items3 = document.querySelectorAll('#carousel3 .carousel-item3');
+                  let currentIndex3 = 0;
+              
+                  function showSlide3(index) {
+                    items3.forEach((item, i) => {
+                      item.classList.toggle('hidden', i !== index);
+                    });
+                  }
+              
+                  document.getElementById('prevButton3').addEventListener('click', () => {
+                    currentIndex3 = (currentIndex3 - 1 + items3.length) % items3.length;
+                    showSlide3(currentIndex3);
+                  });
+              
+                  document.getElementById('nextButton3').addEventListener('click', () => {
+                    currentIndex3 = (currentIndex3 + 1) % items3.length;
+                    showSlide3(currentIndex3);
+                  });
+              
+                  showSlide3(currentIndex3);
+                </script>
+              <!-- Caraousel Components -->
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Website Test Frontend React Js</h3>
+            <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Website ini di bangun untuk melakukan pemahaman mendalam
+              React js dengan implementasi API dan layouting.
+            </span></p>
+            <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">React Js, Vercel.</span></p>
+          </div>
+          
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <!-- Caraousel Components -->
+                <div class="relative w-full max-w-3xl overflow-hidden rounded-lg shadow-lg">
+                  <!-- Carousel Container -->
+                  <div id="carousel2" class="carousel w-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item2 relative float-left w-full">
+                      <img src="dist/img/portfolio/vercleee.jpg" class="block w-full" alt="Slide 1">
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item2 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/Histori1.jpg" class="block w-full" alt="Slide 2">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item2 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/histori2.jpg" class="block w-full" alt="Slide 3">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item2 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/histori3.jpg" class="block w-full" alt="Slide 4">
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item2 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/histori4.jpg" class="block w-full" alt="Slide 5">
+                    </div>
+                  </div>
+              
+                  <!-- Navigation Buttons -->
+                  <button id="prevButton2" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❮
+                  </button>
+                  <button id="nextButton2" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❯
+                  </button>
+                </div>
+                <!-- Script to Handle Carousel Functionality -->
+                <script>
+                  const items2 = document.querySelectorAll('#carousel2 .carousel-item2');
+                  let currentIndex2 = 0;
+              
+                  function showSlide2(index) {
+                    items2.forEach((item, i) => {
+                      item.classList.toggle('hidden', i !== index);
+                    });
+                  }
+              
+                  document.getElementById('prevButton2').addEventListener('click', () => {
+                    currentIndex2 = (currentIndex2 - 1 + items2.length) % items2.length;
+                    showSlide2(currentIndex2);
+                  });
+              
+                  document.getElementById('nextButton2').addEventListener('click', () => {
+                    currentIndex2 = (currentIndex2 + 1) % items2.length;
+                    showSlide2(currentIndex2);
+                  });
+              
+                  showSlide2(currentIndex2);
+                </script>
+              <!-- Caraousel Components -->
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Website History Pribadi</h3>
             <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Website ini di bangun untuk melakukan pemahaman mendalam
@@ -221,6 +368,7 @@
             </span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">Next JS, PostgreSQL, Vercel.</span></p>
           </div>
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/reactjs.jpg" alt="Tjimara" width="w-full" />
@@ -231,9 +379,56 @@
             </span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">React JS</span></p>
           </div>
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/tjimara.png" alt="Tjimara" width="w-full" />
+              <!-- Caraousel Components -->
+                <div class="relative w-full max-w-3xl overflow-hidden rounded-lg shadow-lg">
+                  <!-- Carousel Container -->
+                  <div id="carousel1" class="carousel w-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item1 relative float-left w-full">
+                      <img src="dist/img/portfolio/tjimara.png" class="block w-full" alt="Slide 1">
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item1 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/tjimara2.png" class="block w-full" alt="Slide 2">
+                    </div>
+                  </div>
+              
+                  <!-- Navigation Buttons -->
+                  <button id="prevButton1" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❮
+                  </button>
+                  <button id="nextButton1" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❯
+                  </button>
+                </div>
+                <!-- Script to Handle Carousel Functionality -->
+                <script>
+                  const items1 = document.querySelectorAll('#carousel1 .carousel-item1');
+                  let currentIndex1 = 0;
+              
+                  function showSlide1(index) {
+                    items1.forEach((item, i) => {
+                      item.classList.toggle('hidden', i !== index);
+                    });
+                  }
+              
+                  document.getElementById('prevButton1').addEventListener('click', () => {
+                    currentIndex1 = (currentIndex1 - 1 + items1.length) % items1.length;
+                    showSlide1(currentIndex1);
+                  });
+              
+                  document.getElementById('nextButton1').addEventListener('click', () => {
+                    currentIndex1 = (currentIndex1 + 1) % items1.length;
+                    showSlide1(currentIndex1);
+                  });
+              
+                  showSlide1(currentIndex1);
+                </script>
+              <!-- Caraousel Components -->
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Website Toko Bank Sampah Desa Cimara</h3>
             <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Website ini dibangun untuk melengkapi kebutuhan aplikasi Mobile,
@@ -241,15 +436,73 @@
             </span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">CodeIgniter, MySQL.</span></p>
           </div>
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/Simosic.png" alt="E-Commerce" width="w-full" />
+              <!-- Caraousel Components -->
+                <div class="relative w-full max-w-3xl overflow-hidden rounded-lg shadow-lg">
+                  <!-- Carousel Container -->
+                  <div id="carousel4" class="carousel w-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item4 relative float-left w-full">
+                      <img src="dist/img/portfolio/Simosic.png" class="block w-full" alt="Slide 1">
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item4 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/Simosic2.png" class="block w-full" alt="Slide 2">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item4 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/Simosic3.png" class="block w-full" alt="Slide 2">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item4 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/Simosic4.png" class="block w-full" alt="Slide 2">
+                    </div>
+                  </div>
+              
+                  <!-- Navigation Buttons -->
+                  <button id="prevButton4" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❮
+                  </button>
+                  <button id="nextButton4" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❯
+                  </button>
+                </div>
+                <!-- Script to Handle Carousel Functionality -->
+                <script>
+                  const items4 = document.querySelectorAll('#carousel4 .carousel-item4');
+                  let currentIndex4 = 0;
+              
+                  function showSlide4(index) {
+                    items4.forEach((item, i) => {
+                      item.classList.toggle('hidden', i !== index);
+                    });
+                  }
+              
+                  document.getElementById('prevButton4').addEventListener('click', () => {
+                    currentIndex4 = (currentIndex4 - 1 + items4.length) % items4.length;
+                    showSlide4(currentIndex4);
+                  });
+              
+                  document.getElementById('nextButton4').addEventListener('click', () => {
+                    currentIndex4 = (currentIndex4 + 1) % items4.length;
+                    showSlide4(currentIndex4);
+                  });
+              
+                  showSlide4(currentIndex4);
+                </script>
+              <!-- Caraousel Components -->
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce Sparepart Motor Classic</h3>
             <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Website ini bertujuan untuk memenuhi tugas Skripsi, di mana pembuatan website ini sudah 
               terintegrasi dengan API pihak ketiga seperti RajaOngkir dan Midtrans untuk pembayaran.</span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">Laravel, MySQL, API RajaOngkir, API Midtrans.</span></p>
           </div>
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/flutter.png" alt="Flutter" width="90%" />
@@ -260,9 +513,56 @@
             </span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">Flutter.</span></p>
           </div>
+
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/design UI.png" alt="Tribute Page" width="90%" />
+              <!-- Caraousel Components -->
+                <div class="relative w-full max-w-3xl overflow-hidden rounded-lg shadow-lg">
+                  <!-- Carousel Container -->
+                  <div id="carousel5" class="carousel w-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item5 relative float-left w-full">
+                      <img src="dist/img/portfolio/design1.png" class="block w-full" alt="Slide 1">
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item5 hidden relative float-left w-full">
+                      <img src="dist/img/portfolio/design2.png" class="block w-full" alt="Slide 2">
+                    </div>
+                  </div>
+              
+                  <!-- Navigation Buttons -->
+                  <button id="prevButton5" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❮
+                  </button>
+                  <button id="nextButton5" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
+                    ❯
+                  </button>
+                </div>
+                <!-- Script to Handle Carousel Functionality -->
+                <script>
+                  const items5 = document.querySelectorAll('#carousel5 .carousel-item5');
+                  let currentIndex5 = 0;
+              
+                  function showSlide5(index) {
+                    items5.forEach((item, i) => {
+                      item.classList.toggle('hidden', i !== index);
+                    });
+                  }
+              
+                  document.getElementById('prevButton5').addEventListener('click', () => {
+                    currentIndex5 = (currentIndex5 - 1 + items5.length) % items5.length;
+                    showSlide5(currentIndex5);
+                  });
+              
+                  document.getElementById('nextButton5').addEventListener('click', () => {
+                    currentIndex5 = (currentIndex5 + 1) % items5.length;
+                    showSlide5(currentIndex5);
+                  });
+              
+                  showSlide5(currentIndex5);
+                </script>
+              <!-- Caraousel Components -->
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Design UI</h3>
             <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Ini merupakan implementasi Design UI untuk memperluas pemahaman saya tentang desain responsif, tampilan desain yang konsisten 
@@ -270,6 +570,8 @@
             </span></p>
             <p class="font-bold leading-relaxed text-primary">Teknologi : <span class="font-medium text-dark dark:text-white">Figma.</span></p>
           </div>
+
+
         </div>
       </div>
     </section>
@@ -302,7 +604,7 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/sertifikat/Flutter.jpeg" alt="Flutter" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Teknik Membuat Aplikasi Mobile/h3>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Teknik Membuat Aplikasi Mobile</h3>
             <p class="font-bold leading-relaxed text-primary">Deskripsi : <span class="font-medium text-dark dark:text-white">Ini adalah sertifikat keikutsertaan saya dalam pembelajaran Flutter yang diselenggarakan prakerja, sebuah kelas online yang memperdalam pemahaman saya tentang pengembangan aplikasi mobile. Dalam kursus ini, saya telah menggali lebih dalam tentang Flutter.</span></p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
