@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Ahmad Muhyi</title>
     <link href="dist/css/final.css" rel="stylesheet" />
+    <link href="src/input.css" rel="stylesheet" />
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -13,9 +14,9 @@
         document.documentElement.classList.remove('dark');
       }
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.23/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   
   </head>
@@ -202,9 +203,6 @@
     </section>
     <!-- About Section End -->
 
-    
- 
-
     <!-- Portfolio Section Start -->
     <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
       <div class="container">
@@ -258,11 +256,11 @@
                   </div>
               
                   <!-- Navigation Buttons -->
-                  <button id="prevButton3" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❮
+                  <button id="prevButton3" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ml-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-left text-xl"></i>                
                   </button>
-                  <button id="nextButton3" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❯
+                  <button id="nextButton3" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 mr-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-right text-xl"></i>
                   </button>
                 </div>
                 <!-- Script to Handle Carousel Functionality -->
@@ -330,11 +328,11 @@
                   </div>
               
                   <!-- Navigation Buttons -->
-                  <button id="prevButton2" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❮
+                  <button id="prevButton2" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ml-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-left text-xl"></i>                
                   </button>
-                  <button id="nextButton2" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❯
+                  <button id="nextButton2" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 mr-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-right text-xl"></i>
                   </button>
                 </div>
                 <!-- Script to Handle Carousel Functionality -->
@@ -398,11 +396,11 @@
                   </div>
               
                   <!-- Navigation Buttons -->
-                  <button id="prevButton1" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❮
+                  <button id="prevButton1" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ml-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-left text-xl"></i>                
                   </button>
-                  <button id="nextButton1" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❯
+                  <button id="nextButton1" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 mr-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-right text-xl"></i>
                   </button>
                 </div>
                 <!-- Script to Handle Carousel Functionality -->
@@ -465,11 +463,11 @@
                   </div>
               
                   <!-- Navigation Buttons -->
-                  <button id="prevButton4" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❮
+                  <button id="prevButton4" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ml-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-left text-xl"></i>                
                   </button>
-                  <button id="nextButton4" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❯
+                  <button id="nextButton4" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 mr-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-right text-xl"></i>
                   </button>
                 </div>
                 <!-- Script to Handle Carousel Functionality -->
@@ -532,11 +530,11 @@
                   </div>
               
                   <!-- Navigation Buttons -->
-                  <button id="prevButton5" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❮
+                  <button id="prevButton5" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 ml-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-left text-xl"></i>                
                   </button>
-                  <button id="nextButton5" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white">
-                    ❯
+                  <button id="nextButton5" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 mr-2 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-dark">
+                    <i class="fa-solid fa-circle-chevron-right text-xl"></i>
                   </button>
                 </div>
                 <!-- Script to Handle Carousel Functionality -->

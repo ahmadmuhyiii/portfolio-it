@@ -1,5 +1,3 @@
-const { default: daisyui } = require("daisyui");
-
 module.exports = {
   content: ['index.html'],
   darkMode: 'class',
@@ -19,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [ require(daisyui)],
+  plugins: [],
 };

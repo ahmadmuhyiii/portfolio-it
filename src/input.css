@@ -30,3 +30,233 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+
+@layer utilities {
+  .carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel-item1 {
+    flex: 0 0 100%;
+    display: none;
+  }
+
+  .carousel-item1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  button[id^="prevButton1"],
+  button[id^="nextButton1"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(31, 41, 55, 0.5);
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+
+  button[id^="prevButton1"]:hover,
+  button[id^="nextButton1"]:hover {
+    background-color: rgba(8, 10, 14, 0.75);
+  }
+
+  #prevButton1 {
+    left: 0.5rem;
+  }
+
+  #nextButton1 {
+    right: 0.5rem;
+  }
+
+  .carousel-item1:not(.hidden) {
+    display: block;
+  }
+
+/* 2 */
+
+.carousel-item2 {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.carousel-item2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button[id^="prevButton2"],
+button[id^="nextButton2"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31, 41, 55, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+button[id^="prevButton2"]:hover,
+button[id^="nextButton2"]:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#prevButton2 {
+  left: 0.5rem;
+}
+
+#nextButton2 {
+  right: 0.5rem;
+}
+
+.carousel-item2:not(.hidden) {
+  display: block;
+}
+
+/* 3 */
+
+.carousel-item3 {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.carousel-item3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button[id^="prevButton3"],
+button[id^="nextButton3"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31, 41, 55, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+button[id^="prevButton3"]:hover,
+button[id^="nextButton3"]:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#prevButton3 {
+  left: 0.5rem;
+}
+
+#nextButton3 {
+  right: 0.5rem;
+}
+
+.carousel-item3:not(.hidden) {
+  display: block;
+}
+
+/* 4 */
+
+.carousel-item4 {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.carousel-item4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button[id^="prevButton4"],
+button[id^="nextButton4"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31, 41, 55, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+button[id^="prevButton4"]:hover,
+button[id^="nextButton4"]:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#prevButton4 {
+  left: 0.5rem;
+}
+
+#nextButton4 {
+  right: 0.5rem;
+}
+
+.carousel-item4:not(.hidden) {
+  display: block;
+}
+
+/* 5 */
+
+.carousel-item5 {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.carousel-item5 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button[id^="prevButton5"],
+button[id^="nextButton5"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31, 41, 55, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+button[id^="prevButton5"]:hover,
+button[id^="nextButton5"]:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#prevButton5 {
+  left: 0.5rem;
+}
+
+#nextButton5 {
+  right: 0.5rem;
+}
+
+.carousel-item5:not(.hidden) {
+  display: block;
+}
+
+
+}
